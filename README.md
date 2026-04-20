@@ -30,12 +30,14 @@ The current demo case shows:
 - `artifacts/sample_runs/case_001` - generated outputs
 - `tests` - local tests
 - `docs` - submission documentation scaffolding
+- `run/build_judge_summary.py` - judge summary generator
 
 ## Local run
 ### Windows PowerShell
 ```powershell
 $env:PYTHONPATH = ".\src"
 python -m src.artar_fe.main --case-path ".\demo_case\case_001.txt" --output-dir ".\artifacts\sample_runs\case_001"
+python .\run\build_judge_summary.py
 ```
 
 ## Generated outputs
@@ -44,6 +46,7 @@ After the demo run, the following files are produced:
 - `artifacts/sample_runs/case_001/report.md`
 - `artifacts/sample_runs/case_001/findings.csv`
 - `artifacts/sample_runs/case_001/execution_log.jsonl`
+- `artifacts/sample_runs/case_001/judge_summary.txt`
 
 ## Test run
 ```powershell
