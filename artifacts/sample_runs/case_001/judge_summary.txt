@@ -1,0 +1,14 @@
+ARTAR-FE Judge Summary
+
+Summary: ARTAR-FE completed a guarded two-pass investigation with one visible self-correction.
+Confirmed findings: 1
+Inferred findings: 1
+Rejected hypotheses: 1
+Self-correction used: True
+L3 center: verified_persistence_center
+L2 structure mode: two_pass_verification
+
+Key result:
+- first pass was downgraded
+- replan was triggered
+- second pass verified a stronger persistence-related indicator
