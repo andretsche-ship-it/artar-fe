@@ -1,0 +1,2 @@
+finding_id,claim,claim_type,confidence,source_tool,source_artifact,verification_status
+F-000,Placeholder finding,needs_validation,0.0,none,none,unverified

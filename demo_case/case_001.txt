@@ -1,0 +1,5 @@
+User login event observed.
+Startup folder reviewed but no direct malicious file was initially confirmed.
+Analyst note: possible persistence, needs stronger evidence.
+Registry review later showed HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run entry for suspicious.exe in AppData.
+Scheduled task reference found via schtasks export.

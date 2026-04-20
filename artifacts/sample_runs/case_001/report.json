@@ -1,0 +1,81 @@
+{
+  "summary": "ARTAR-FE completed a guarded two-pass investigation with one visible self-correction.",
+  "narrative": "ARTAR-FE executed a guarded investigation flow. Confirmed findings: 1. Inferred findings: 1. Rejected hypotheses: 1. The first pass was downgraded because the evidence was too weak, then a second pass produced stronger persistence-related evidence.",
+  "findings": [
+    {
+      "finding_id": "F-001",
+      "claim": "Initial persistence hypothesis was too weak to confirm",
+      "claim_type": "rejected",
+      "confidence": 0.2,
+      "source_tool": "keyword_scan",
+      "source_artifact": "demo_case\\case_001.txt",
+      "offset_or_line": "line 2",
+      "verification_status": "rejected_after_verification",
+      "supporting_steps": [
+        "S-001"
+      ],
+      "notes": "Generic startup wording without stronger persistence markers."
+    },
+    {
+      "finding_id": "F-002",
+      "claim": "Suspicious persistence-related indicator detected in the case text",
+      "claim_type": "confirmed",
+      "confidence": 0.91,
+      "source_tool": "keyword_scan",
+      "source_artifact": "demo_case\\case_001.txt",
+      "offset_or_line": "line 2",
+      "verification_status": "verified",
+      "supporting_steps": [
+        "S-002"
+      ],
+      "notes": "Confirmed after self-correction and stronger evidence search."
+    },
+    {
+      "finding_id": "F-003",
+      "claim": "The suspicious indicator may be tied to user-level autorun persistence",
+      "claim_type": "inferred",
+      "confidence": 0.58,
+      "source_tool": "keyword_scan",
+      "source_artifact": "demo_case\\case_001.txt",
+      "offset_or_line": "line 2",
+      "verification_status": "needs_manual_validation",
+      "supporting_steps": [
+        "S-002"
+      ],
+      "notes": "Plausible analytic inference that still requires analyst confirmation."
+    }
+  ],
+  "artar_state": {
+    "omega": {
+      "case_length": 340,
+      "line_count": 5,
+      "contains_startup_language": true,
+      "contains_registry_language": true,
+      "contains_task_language": true,
+      "history_count": 2,
+      "self_correction_used": true
+    },
+    "reactivity": {
+      "first_supported": false,
+      "latest_supported": true,
+      "needs_replan": true,
+      "history_depth": 2
+    },
+    "l3": {
+      "center": "verified_persistence_center",
+      "confidence_mode": "stabilized"
+    },
+    "l2": {
+      "structure_mode": "two_pass_verification",
+      "verification_required": true
+    },
+    "l1": {
+      "ground_truth_window": {
+        "startup_language": true,
+        "registry_language": true,
+        "task_language": true
+      },
+      "execution_shape": "two_pass_verification"
+    }
+  }
+}

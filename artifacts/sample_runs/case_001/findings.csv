@@ -1,0 +1,4 @@
+finding_id,claim,claim_type,confidence,source_tool,source_artifact,offset_or_line,verification_status,supporting_steps,notes
+F-001,Initial persistence hypothesis was too weak to confirm,rejected,0.2,keyword_scan,demo_case\case_001.txt,line 2,rejected_after_verification,['S-001'],Generic startup wording without stronger persistence markers.
+F-002,Suspicious persistence-related indicator detected in the case text,confirmed,0.91,keyword_scan,demo_case\case_001.txt,line 2,verified,['S-002'],Confirmed after self-correction and stronger evidence search.
+F-003,The suspicious indicator may be tied to user-level autorun persistence,inferred,0.58,keyword_scan,demo_case\case_001.txt,line 2,needs_manual_validation,['S-002'],Plausible analytic inference that still requires analyst confirmation.
